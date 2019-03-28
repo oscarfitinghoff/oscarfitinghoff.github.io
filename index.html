@@ -42,5 +42,29 @@
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, minus. Eius, recusandae? Dolor officiis repellat alias? Est pariatur quasi perferendis nobis cupiditate debitis voluptates eligendi maxime hic
       reiciendis. Totam sunt laborum praesentium reprehenderit, obcaecati fuga neque! Animi, dolorem hic sit ratione amet commodi, minima aut doloribus, libero facilis rerum odit.
     </p>
+    <script>
+      var btn = document.querySelector('.js-click');
+      btn.addEventListener('click', function() {
+        console.log('click');
+        dataLayer.push({
+          event: 'addToCart',
+          ecommerce: {
+            currencyCode: 'SEK',
+            add: {
+              products: [
+                {
+                  name: 'Gåva 1',
+                  id: '12345',
+                  price: '200',
+                  brand: 'Privat',
+                  category: 'TestGåvor',
+                  quantity: 1
+                }
+              ]
+            }
+          }
+        });
+      });
+    </script>
   </body>
 </html>
