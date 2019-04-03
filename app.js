@@ -76,37 +76,37 @@ btnCheckout2.addEventListener('click', function(e) {
     },
     eventCallback: function() {
       console.log('checkout callback');
-      // document.location = 'checkout.html';
+      document.location = 'checkout.html';
       // if (cb) cb();
     }
   });
 });
 
-btnPurchase.addEventListener('click', function(e) {
-  e.preventDefault();
-  console.log('btnPurchase');
-  dataLayer.push({
-    ecommerce: {
-      purchase: {
-        actionField: {
-          id: 'T123456',
-          affiliation: 'SRK',
-          revenue: '35.43',
-          tax: '0',
-          shipping: '0',
-          coupon: 'SUMMER_SALE'
-        },
-        products: [
-          {
-            name: 'Gåva 1',
-            id: '12345',
-            price: '200',
-            brand: 'Privat',
-            category: 'TestGåvor',
-            quantity: 1
-          }
-        ]
-      }
-    }
-  });
-});
+// btnPurchase.addEventListener('click', function(e) {
+//   e.preventDefault();
+//   console.log('btnPurchase');
+//   dataLayer.push({
+//     ecommerce: {
+//       purchase: {
+//         actionField: {
+//           id: 'T123456',
+//           affiliation: 'SRK',
+//           revenue: '35.43',
+//           tax: '0',
+//           shipping: '0',
+//           coupon: 'SUMMER_SALE'
+//         },
+//         products: [
+//           {
+//             name: 'Gåva 1',
+//             id: '12345',
+//             price: '200',
+//             brand: 'Privat',
+//             category: 'TestGåvor',
+//             quantity: 1
+//           }
+//         ]
+//       }
+//     }
+//   });
+// });
