@@ -43,10 +43,13 @@
       <button class="js-checkout2">checkout2</button>
       <!-- <button class="js-purchase">purchase</button> -->
     </form>
+    <button data-gtmevent="click" data-gtmjson='{"key": "value"}'>GTMClick</button>
+    <button data-gtmevent="addToCart" data-gtmjson='{"event": "addToCart","ecommerce": {"currencyCode": "SEK","add": {"products": [{"name": "Gåva 1","id": "12345","price": "200","brand": "Privat","category": "TestGåvor","quantity": 1}]}}}'>GTMAddToCart</button>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, minus. Eius, recusandae? Dolor officiis repellat alias? Est pariatur quasi perferendis nobis cupiditate debitis voluptates eligendi maxime hic
       reiciendis. Totam sunt laborum praesentium reprehenderit, obcaecati fuga neque! Animi, dolorem hic sit ratione amet commodi, minima aut doloribus, libero facilis rerum odit.
     </p>
     <script src="app.js"></script>
+    <script src="pln.js"></script>
   </body>
 </html>
